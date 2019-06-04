@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>33</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <script type="text/javascript" src="./src/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/bulma.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./src/debug.css" /> -->
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .navbar-brand {
+            background: black;
+        }
+
+        .navbar-menu {
+            background: black;
+        }
+
+        .menu_item_one {
+            color: white;
+        }
+
+        .menu_item_one:hover {
+            color: white;
+        }
+
+        .menu_item {
+            border: none;
+            color: white
+        }
+
+        .menu_item:hover {
+            border-bottom: 2px solid #fff;
+            color: white
+        }
+
+        .section_body {
+            margin-top: 2rem;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+            $('.navbar-burger').click(function () {
+                $('.navbar-burger').toggleClass('is-active');
+                $('.navbar-menu').toggleClass('is-active');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <section class="hero is-small nav">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a class="navbar-burger burger">
+                        <span class="has-text-white"></span>
+                        <span class="has-text-white"></span>
+                        <span class="has-text-white"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <a class="menu_item_one" href="#">
+                                <strong> OPTIMALLYAFAN'S &nbsp;&nbsp; WEBSITE </strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <a class="menu_item" href="#">
+                                <strong> Home </strong>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="menu_item" href="aboutMe.html">
+                                <strong> aboutMe </strong>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="menu_item" href="discover.html">
+                                <strong> discover </strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="section_body">
+        <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-2by1">
+                        <img src="./imgs/myself.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">John Smith</p>
+                            <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

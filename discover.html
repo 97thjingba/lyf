@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>33</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <script type="text/javascript" src="./src/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/bulma.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./src/debug.css" /> -->
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .navbar-brand {
+            background: black;
+        }
+
+        .navbar-menu {
+            background: black;
+        }
+
+        .menu_item_one {
+            color: white;
+        }
+
+        .menu_item_one:hover {
+            color: white;
+        }
+
+        .menu_item {
+            border: none;
+            color: white
+        }
+
+        .menu_item:hover {
+            border-bottom: 2px solid #fff;
+            color: white
+        }
+
+        .section_body {
+            margin-top: 2rem;
+        }
+
+        @media(max-width:768px){
+            .box{
+                display:none;
+            }
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+            $('.navbar-burger').click(function () {
+                $('.navbar-burger').toggleClass('is-active');
+                $('.navbar-menu').toggleClass('is-active');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <section class="hero is-small nav">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a class="navbar-burger burger">
+                        <span class="has-text-white"></span>
+                        <span class="has-text-white"></span>
+                        <span class="has-text-white"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <a class="menu_item_one" href="#">
+                                <strong> OPTIMALLYAFAN'S &nbsp;&nbsp; WEBSITE </strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <a class="menu_item" href="#">
+                                <strong> Home </strong>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="menu_item" href="aboutMe.html">
+                                <strong> aboutMe </strong>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="menu_item" href="discover.html">
+                                <strong> discover </strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="section_body">
+        <div class="container is-mobile">
+            <a href="lyf.html">
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="./imgs/myself.jpg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>LYF</strong> <small>@xxxxxxx</small> <small>xxxx</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                                fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            </div>
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="./imgs/Chara/1.jpg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>Chara</strong> <small>@xxxxxxx</small> <small>xxxx</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                                fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="./imgs/王义博/1.jpg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>王义博</strong> <small>@xxxxxxx</small> <small>xxxx</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                                fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="./imgs/白墨水/1.jpg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>白墨水</strong> <small>@xxxxxxx</small> <small>xxxx</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                                fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="./imgs/貓力Molly/1.jpg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>貓力Molly</strong> <small>@xxxxxxx</small> <small>xxxx</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                                fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="./imgs/鹰婕/1.jpg" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>鹰婕</strong> <small>@xxxxxxx</small> <small>xxxx</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                                fringilla egestas. Nullam condimentum luctus turpis.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
