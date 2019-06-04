@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>One single section - fullPage.js</title>
+    <meta name="Resource-type" content="Document" />
+    <script type="text/javascript" src="./src/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+    <link rel="stylesheet" type="text/css" href="./src/bulma.css" />
+    <style>
+        /* Style for our header texts
+	* --------------------------------------- */
+        h1 {
+            font-size: 5em;
+            font-family: arial, helvetica;
+            color: #fff;
+            margin: 0;
+            padding: 40px 0 0 0;
+        }
+
+        .intro p {
+            color: #fff;
+            padding: 40px 0 0 0;
+        }
+
+        .wrap {
+            margin-left: auto;
+            margin-right: auto;
+            width: 980px;
+            position: relative;
+            padding: 20px 0 20px 0;
+        }
+
+        .wrap h1 {
+            font-size: 2.3em;
+            color: #333;
+            padding: 30px 0 10px 0;
+        }
+
+        .wrap p {
+            font-size: 16px;
+            padding: 0 0 10px 0;
+        }
+
+        .box {
+            display: block;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Centered texts in each section
+	* --------------------------------------- */
+        .section {
+            text-align: center;
+        }
+
+        #slide1 {
+            background-image: url(imgs/myself.jpg);
+            background-position: 80% 80%
+        }
+
+        #infoMenu li a {
+            color: #000;
+        }
+
+        .navbar-brand {
+            background: black;
+        }
+
+        .navbar-menu {
+            background: black;
+        }
+
+        .menu_item_one {
+            color: white;
+        }
+
+        .menu_item_one:hover {
+            color: white;
+        }
+
+        .menu_item {
+            border: none;
+            color: white
+        }
+
+        .menu_item:hover {
+            border-bottom: 2px solid #fff;
+            color: white
+        }
+    </style>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.navbar-burger').click(function () {
+                $('.navbar-burger').toggleClass('is-active');
+                $('.navbar-menu').toggleClass('is-active');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section class="hero is-small nav">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a class="navbar-burger burger">
+                        <span class="has-text-white"></span>
+                        <span class="has-text-white"></span>
+                        <span class="has-text-white"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <a class="menu_item_one" href="#">
+                                <strong> OPTIMALLYAFAN'S &nbsp;&nbsp; WEBSITE </strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-start">
+                        <div class="navbar-item">
+                            <a class="menu_item" href="index.html">
+                                <strong> Home </strong>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="menu_item" href="#">
+                                <strong> aboutMe </strong>
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="menu_item" href="#">
+                                <strong> </strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <h1>LYF</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <h1>LYF'S ALBUM.</h1>
+        <div class="box">
+
+            LYF'S ALBUM was founded on January 18, 2018 to provide a high-quality image exchange platform for Chinese
+            photographers around the world. At the beginning of 2018, the color shadow was the first to put forward the
+            slogan “No photography without camera”, which made the website gather a large number of top experts familiar
+            with photographic equipment;
+            In the past few years, we have been striving to create a high-quality video art platform, with the goal of
+            leading in the industry, and to simultaneously develop the "image" and "equipment" under photography.
+            Nian, has become the preferred exchange sharing site for photography enthusiasts.
+        </div>
+        <p>
+            Today, in addition to providing professional imaging services for photography enthusiasts, we are always
+            focusing on the professional and cutting-edge areas of video art – from supporting young photographers.
+            The photographic work sharing platform, to the professional and high-end annual exhibition of video art, is
+            being built from lovers to excellent artists, from online fast consumption to professional
+            Image collection of all-round video art concepts and patterns
+        </p>
+
+
+    </div>
+
+    <script type="text/javascript" src="./src/fullpage.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#4A6FB1'],
+            autoScrolling: false,
+            css3: true,
+            fitToSection: false
+        });
+    </script>
+</body>
+
+</html>
