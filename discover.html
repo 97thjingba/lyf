@@ -12,7 +12,7 @@
         .center {
             display: flex;
             justify-content: center;
-            align-items: center
+            align-items: center;
         }
 
         .navbar-brand {
@@ -33,34 +33,36 @@
 
         .menu_item {
             border: none;
-            color: white
+            color: white;
         }
 
         .menu_item:hover {
             border-bottom: 2px solid #fff;
-            color: white
+            color: white;
         }
 
         .section_body {
             margin-top: 2rem;
         }
 
-        @media(max-width:768px){
-            .box{
-                display:none;
+        p {
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                display: none;
             }
         }
     </style>
     <script>
-
         $(document).ready(function () {
-            $('.navbar-burger').click(function () {
-                $('.navbar-burger').toggleClass('is-active');
-                $('.navbar-menu').toggleClass('is-active');
+            $(".navbar-burger").click(function () {
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
             });
         });
     </script>
-
 </head>
 
 <body>
@@ -84,7 +86,7 @@
                     </div>
                     <div class="navbar-start">
                         <div class="navbar-item">
-                            <a class="menu_item" href="#">
+                            <a class="menu_item" href="index.html">
                                 <strong> Home </strong>
                             </a>
                         </div>
@@ -105,125 +107,146 @@
     </section>
     <section class="section_body">
         <div class="container is-mobile">
-            <a href="lyf.html">
             <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="./imgs/myself.jpg" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>LYF</strong> <small>@xxxxxxx</small> <small>xxxx</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                                fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
+                <a href="lyf.html">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="./imgs/myself.jpg" alt="Image" />
+                            </figure>
                         </div>
-                    </div>
-                </article>
-            </a>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>LYF</strong> <small>@xxxxxxx</small>
+                                    <small>xxxx</small>
+                                    <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                                    condimentum luctus turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
             <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="./imgs/Chara/1.jpg" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>Chara</strong> <small>@xxxxxxx</small> <small>xxxx</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                                fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
+                <a href="Chara.html" class="box_margin">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="./imgs/Chara/1.jpg" alt="Image" />
+                            </figure>
                         </div>
-                    </div>
-                </article>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Chara</strong> <small>@xxxxxxx</small>
+                                    <small>xxxx</small>
+                                    <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                                    condimentum luctus turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
             <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="./imgs/王义博/1.jpg" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>王义博</strong> <small>@xxxxxxx</small> <small>xxxx</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                                fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
+                <a href="wyb.html" class="box_margin">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="./imgs/王义博/1.jpg" alt="Image" />
+                            </figure>
                         </div>
-                    </div>
-                </article>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>王义博</strong> <small>@xxxxxxx</small>
+                                    <small>xxxx</small>
+                                    <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                                    condimentum luctus turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
             <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="./imgs/白墨水/1.jpg" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>白墨水</strong> <small>@xxxxxxx</small> <small>xxxx</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                                fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
+                <a href="bms.html" class="box_margin">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="./imgs/白墨水/1.jpg" alt="Image" />
+                            </figure>
                         </div>
-                    </div>
-                </article>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>白墨水</strong> <small>@xxxxxxx</small>
+                                    <small>xxxx</small>
+                                    <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                                    condimentum luctus turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
             <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="./imgs/貓力Molly/1.jpg" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>貓力Molly</strong> <small>@xxxxxxx</small> <small>xxxx</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                                fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
+                <a href="molly.html" class="box_margin">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="./imgs/貓力Molly/1.jpg" alt="Image" />
+                            </figure>
                         </div>
-                    </div>
-                </article>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>貓力Molly</strong> <small>@xxxxxxx</small>
+                                    <small>xxxx</small>
+                                    <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                                    condimentum luctus turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
             <div class="box">
-                <article class="media">
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="./imgs/鹰婕/1.jpg" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>鹰婕</strong> <small>@xxxxxxx</small> <small>xxxx</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                                fringilla egestas. Nullam condimentum luctus turpis.
-                            </p>
+                <a href="yj.html" class="box_margin">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img src="./imgs/鹰婕/1.jpg" alt="Image" />
+                            </figure>
                         </div>
-                    </div>
-                </article>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>鹰婕</strong> <small>@xxxxxxx</small>
+                                    <small>xxxx</small>
+                                    <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenean efficitur sit amet massa fringilla egestas. Nullam
+                                    condimentum luctus turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
             </div>
         </div>
     </section>
-
 </body>
 
 </html>
